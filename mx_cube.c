@@ -91,3 +91,4 @@ void mx_cube(int n) {
         print_bottom_middle(width, depth, n);
         print_bottom_line(width, depth);
     }
+    
