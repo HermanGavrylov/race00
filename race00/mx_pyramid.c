@@ -27,14 +27,15 @@ void mx_pyramid(int n) {
         if (i == 1)
           continue;
         if (i > n / 2) {
-          if (tri3 < n / 2 - i / 2)
+          if (tri3 < n - i) // n-i-1
             printf(" ");
           else {
             printf("|");
             break;
           }
+        } else {
+          printf(" ");
         }
-        printf(" ");
       }
       if (i != 1 && i <= n / 2)
         printf("\\");
